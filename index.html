@@ -9,14 +9,16 @@
 <body>
 	<script>
 		function start() {
-			const cvs = document.getElementById("c");
-			document.getElementById("start-btn").style.display = "none";
-			cvs.height = window.height;
-			cvs.width = window.width;
-			const ctx = cvs.getContext("2d");
-			ctx.font = "24px serif";
-			ctx.fillText("test", 0, 0);
-			ctx.fillRect(20, 10, 150, 100);
+			if (canvas.getContext) {
+		  		const ctx = canvas.getContext("2d");
+				const cvs = document.getElementById("c");
+				document.getElementById("start-btn").style.display = "none";
+				cvs.height = window.height;
+				cvs.width = window.width;
+				ctx.font = "24px serif";
+				ctx.fillText("test", 0, 0);
+				ctx.fillRect(20, 10, 150, 100);
+			}
 		}
 	</script>
 	<button id="start-btn" type="button" autofocus onclick="start()">
