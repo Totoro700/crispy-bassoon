@@ -10,14 +10,14 @@
 	<script>
 		function start() {
 			if (canvas.getContext) {
+				document.getElementById("start-btn").style.display = "none";
 		  		const ctx = canvas.getContext("2d");
 				const cvs = document.getElementById("c");
-				document.getElementById("start-btn").style.display = "none";
 				const height = window.innerHeight;
 				const width = window.innerWidth;
 				cvs.height = height;
 				cvs.width = width;
-				ctx.font = "24px serif";
+				ctx.font = "48px serif";
 				ctx.fillText("test", height/2, width/2);
 				ctx.fillRect(20, 10, 150, 100);
 			}
