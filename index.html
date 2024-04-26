@@ -9,10 +9,10 @@
 <body>
 	<script>
 		function start() {
-			if (canvas.getContext) {
+			const cvs = document.getElementById("c");
+			if (cvs.getContext) {
 				document.getElementById("start-btn").style.display = "none";
-		  		const ctx = canvas.getContext("2d");
-				const cvs = document.getElementById("c");
+		  		const ctx = cvs.getContext("2d");
 				const height = window.innerHeight;
 				const width = window.innerWidth;
 				cvs.height = height;
