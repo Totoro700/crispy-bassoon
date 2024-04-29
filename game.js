@@ -2,6 +2,7 @@ const cr;
 const width;
 var dil;
 const qtn;
+const qtns = []; // {question, left, right, isLeft}
 
 function start() {
 	var rq = grq();
@@ -51,3 +52,20 @@ function waitEtr() {
 		}
 	});
 }
+
+class grq {
+	constructor() {
+		const idx = Math.floor(Math.random() * qtns.length);
+		this.q = qtns[idx][0];
+		this.l = qtns[idx][1];
+		this.r = qtns[idx][2];
+		this.il = qtns[idx][3];
+		
+	}
+
+	q() {
+		return this.q
+	}
+	
+}
+
