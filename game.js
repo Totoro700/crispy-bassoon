@@ -4,7 +4,7 @@ var dil;
 const qtn;
 const qtns = []; // {question, left, right, isLeft}
 
-function start() {
+function gstart() {
 	console.log(width);
 	var rq = grq();
 	var qil = rq.il();
