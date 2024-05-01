@@ -1,10 +1,11 @@
 const cr;
-const width;
+const width = document.getElementById("c").width;
 var dil;
 const qtn;
 const qtns = []; // {question, left, right, isLeft}
 
 function start() {
+	console.log(width);
 	var rq = grq();
 	var qil = rq.il();
 	qtn.innerText = rq.q;
