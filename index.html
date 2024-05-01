@@ -3,26 +3,10 @@
 <head>
 	<meta charset='utf-8'>
 	<meta content='width=device-width, initial-scale=1' name='viewport'>
-	<!--<link href='style.css' rel='stylesheet' type='text/CSS'>-->
-	<!--<script async src='script.js'>-->
+	<link href='style.css' rel='stylesheet' type='text/CSS'>
+	<script async src='script.js'></script>
 </head>
 <body>
-	<script>
-		function start() {
-			const cvs = document.getElementById("c");
-			if (cvs.getContext) {
-				document.getElementById("start-btn").style.display = "none";
-		  		const ctx = cvs.getContext("2d");
-				const height = window.innerHeight;
-				const width = window.innerWidth;
-				cvs.height = height;
-				cvs.width = width;
-				ctx.font = "48px serif";
-				ctx.fillText("test", 500, 500);
-				ctx.fillRect(20, 10, 150, 100);
-			}
-		}
-	</script>
 	<button id="start-btn" type="button" autofocus onclick="start()">
 		Start
 	</button>

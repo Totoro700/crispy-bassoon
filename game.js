@@ -15,7 +15,7 @@ function start() {
 		} else {
 			// incorrect
 		}
-	else {
+	} else {
 		if (qil) {
 			// incorrect
 		} else {
