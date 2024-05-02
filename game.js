@@ -38,7 +38,7 @@ function start() {
 
 
 		ctx.font = "48px serif";
-		ctx.strokeText("test", 0.25*cWidth,0.33*cHeight);
+		ctx.strokeText("test", cWidth/2, cHeight/2);
 		
     }
 }
