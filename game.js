@@ -1,28 +1,46 @@
-const cr;
-const width = document.getElementById("c").width;
 var dil;
-const qtn;
-const qtns = []; // {question, left, right, isLeft}
+const cvs = document.getElementById("c");
+const qtns = []; 
 
-function gstart() {
-	console.log(width);
-	var rq = grq();
-	var qil = rq.il();
-	qtn.innerText = rq.q;
-	waitDrn();
-	if (dil) {
-		if (qil) {
-			// correct
-		} else {
-			// incorrect
-		}
-	} else {
-		if (qil) {
-			// incorrect
-		} else {
-			// correct
-		}
-	}
+function start() {
+    if (cvs.getContext) {
+        document.getElementById("start-btn").style.display = "none";
+        const ctx = cvs.getContext("2d");
+        const height = window.innerHeight - 20;
+        const width = window.innerWidth - 20;
+        const cHeight = cvs.height;
+        const cWidth = cvs.width;
+        cvs.height = height;
+        cvs.width = width;
+		ctx.fillStyle = "green";
+		ctx.fillRect(0, 0, cvs.width, cvs.height);
+
+        
+        const startX = width / 2; 
+        const startY = height / 2; 
+        const endX = width / 2; 
+        const endY = height; 
+
+        
+        ctx.beginPath();
+
+        
+        ctx.moveTo(startX, startY);
+
+        
+        ctx.lineTo(endX, endY);
+
+        
+        ctx.strokeStyle = "black";
+
+        
+        ctx.stroke();
+
+
+		ctx.font = "25px Sans Serif";
+		ctx.fillText("test", 0.25*cWidth,0.33*cHeight);
+		
+    }
 }
 
 function waitDrn() {
