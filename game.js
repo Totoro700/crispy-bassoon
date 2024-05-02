@@ -12,7 +12,7 @@ function start() {
         const cWidth = cvs.width;
         cvs.height = height;
         cvs.width = width;
-		ctx.fillStyle = "green";
+		ctx.fillStyle = "rgb(146, 237, 247)";
 		ctx.fillRect(0, 0, cvs.width, cvs.height);
 
         
