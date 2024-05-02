@@ -36,9 +36,9 @@ function start() {
         
         ctx.stroke();
 
-
-		ctx.font = "48px serif";
-		ctx.strokeText("test", cWidth/2, cHeight/2);
+	console.log(cWidth, cHeight);
+	ctx.font = "48px serif";
+	ctx.strokeText("test", cWidth/2, cHeight/2);
 		
     }
 }
