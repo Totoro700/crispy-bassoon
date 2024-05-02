@@ -26,7 +26,7 @@ function start() {
 
 function waitDrn() {
 	return new Promise((resolve) => {
-		document.addEventListener('keydown'), onKeyHandler);
+		document.addEventListener('keydown', onKeyHandler);
 		function onKeyHandler(e) {
 			if (e.keyCode === 37) {
 				document.removeEventListener('keydown', onKeyHandler);
@@ -38,7 +38,7 @@ function waitDrn() {
 				dil = false;
 			}
 		}
-	}
+	});
 }
 
 function waitEtr() {
