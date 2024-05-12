@@ -1,6 +1,6 @@
-var dil;
+/*var dil;
 const cvs = document.getElementById("c");
-const qtns = []; 
+const qtns = [["Which comes first in the Order of Operations, Exponents or Multiplication? (remember PEMDAS)", "Exponents", "Multiplication", true], ["Which comes first in the Order of Operations, Multiplication or Division? (remember PEMDAS)", "It's always multiplication", "It's is interchangable", false]]; 
 
 function start() {
     if (cvs.getContext) {
@@ -35,11 +35,12 @@ function start() {
 
         
         ctx.stroke();
-
-
-		ctx.font = "25px Sans Serif";
-		ctx.fillText("test", 0.25*cWidth,0.33*cHeight);
-		
+		const idx = Math.floor(Math.random() * qtns.length);
+		ctx.font = "25px Arial";
+		ctx.fillStyle = "black";
+		ctx.fillText(qtns[idx][0], 0.5*cWidth, 0.25*cHeight);
+		ctx.fillText(qtns[idx][1], 0.2*cWidth, 0.6*cHeight);	
+		ctx.fillText(qtns[idx][2], 0.7*cWidth, 0.6*cHeight);	
     }
 }
 
@@ -71,20 +72,4 @@ function waitEtr() {
 		}
 	});
 }
-
-class grq {
-	constructor() {
-		const idx = Math.floor(Math.random() * qtns.length);
-		this.q = qtns[idx][0];
-		this.l = qtns[idx][1];
-		this.r = qtns[idx][2];
-		this.il = qtns[idx][3];
-		
-	}
-
-	q() {
-		return this.q
-	}
-	
-}
-
+*/
