@@ -22,10 +22,12 @@ async function start() {
         await waitDrn();
         if (dil && qtns[idx][3]) {
             rg++
-            q.innerText = "That's correct!"
+            q.innerText = "That's correct!";
+        } else if (!dil && !qtns[idx][3]) {
+            q.innerText = "That's correct!";
         } else {
-            q.innerText = "That's incorrect, " + ca + " was the correct answer"
-        }
+            q.innerText = "That's incorrect, " + ca + " was the correct answer";
+	}
         await waitEtr();
         qtns.splice(idx, 1);
         if (qtns.length === 0) {
