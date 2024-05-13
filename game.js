@@ -12,7 +12,7 @@ function start() {
         const cWidth = cvs.width;
         cvs.height = height;
         cvs.width = width;
-		ctx.fillStyle = "green";
+		ctx.fillStyle = "rgb(146, 237, 247)";
 		ctx.fillRect(0, 0, cvs.width, cvs.height);
 
         
@@ -35,12 +35,20 @@ function start() {
 
         
         ctx.stroke();
+<<<<<<< HEAD
 		const idx = Math.floor(Math.random() * qtns.length);
 		ctx.font = "25px Arial";
 		ctx.fillStyle = "black";
 		ctx.fillText(qtns[idx][0], 0.5*cWidth, 0.25*cHeight);
 		ctx.fillText(qtns[idx][1], 0.2*cWidth, 0.6*cHeight);	
 		ctx.fillText(qtns[idx][2], 0.7*cWidth, 0.6*cHeight);	
+=======
+
+	console.log(cWidth, cHeight);
+	ctx.font = "48px serif";
+	ctx.strokeText("test", cWidth/2, cHeight/2);
+		
+>>>>>>> 878b7fc780f355c05fb12aaf31231573ecf8dee0
     }
 }
 
