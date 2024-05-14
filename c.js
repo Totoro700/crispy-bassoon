@@ -27,6 +27,7 @@ async function start() {
             q.innerText = "That's correct!";
         } else if (!dil && !qtns[idx][3]) {
             q.innerText = "That's correct!";
+            rg++
         } else {
             q.innerText = "That's incorrect, " + ca + " was the correct answer";
 	}
