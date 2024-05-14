@@ -11,6 +11,11 @@ body {
 #question {
     text-align: center;
 }
+img {
+    position: absolute;
+    right:0%;
+    bottom:0%;
+}
 #left {
     position: absolute;
     top: 25%;
